@@ -487,9 +487,15 @@ body {
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 2rem;
+    -moz-column-rule: 1px solid #dad8d8;
     column-count: 2;
     column-gap: 2rem;
     column-rule: 1px solid #dad8d8;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
     hyphens: auto; }
 
 .footer {
