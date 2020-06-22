@@ -95,4 +95,52 @@
       color: $color-primary-dark;
     }
   }
+
+  @include respond(tab-land) {
+    &__left {
+      display: table;
+      width: 100%;
+    }
+
+    &__img {
+      display: inline-block;
+      width: 50%;
+      max-height: 22rem;
+      object-fit: cover;
+    }
+
+    &__right {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 43.75em) {
+    &__img {
+      max-height: 18rem;
+    }
+  }
+
+  @include respond(phone) {
+    &__left {
+      display: block;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+      margin-bottom: 4rem;
+
+      -moz-column-count: 1;
+      column-count: 1;
+
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+    }
+  }
 }

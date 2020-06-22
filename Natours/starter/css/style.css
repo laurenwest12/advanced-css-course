@@ -656,6 +656,35 @@ body {
     line-height: 1; }
   .popup__close:hover {
     color: #28b485; }
+  @media only screen and (max-width: 75em) {
+    .popup__left {
+      display: table;
+      width: 100%; }
+    .popup__img {
+      display: inline-block;
+      width: 50%;
+      max-height: 22rem;
+      object-fit: cover; }
+    .popup__right {
+      display: block;
+      width: 100%; } }
+  @media (max-width: 43.75em) {
+    .popup__img {
+      max-height: 18rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .popup__left {
+      display: block; }
+    .popup__img {
+      width: 100%; }
+    .popup__text {
+      font-size: 1.4rem;
+      margin-bottom: 4rem;
+      -moz-column-count: 1;
+      column-count: 1;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto; } }
 
 .footer {
   background-color: #333;
